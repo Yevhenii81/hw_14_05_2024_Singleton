@@ -102,7 +102,6 @@ int main()
     auto ptr = FileManager::GetInstance();
     ptr->CreateFile(file);
 
-    ptr->Write(file, "hidsadas");
     ptr->Write(file, "hello world");
     cout << ptr->ReadFile(file);
 }
